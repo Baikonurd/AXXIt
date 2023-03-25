@@ -1,0 +1,164 @@
+:root {
+  --font1: "Open Sans", sans-serif;
+  --font2: "Raleway", sans-serif;
+  --color_black: black;
+  --color_accent: #ff9b51;
+  --color_gray: #cccccc;
+  --color_white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+header {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+header .logo {
+  font-family: var(--font1);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+header .logo span {
+  font-family: var(--font1);
+  font-weight: 50;
+  color: var(--color_accent);
+}
+header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1vh 15%;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: var(--font1);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color_gray);
+  align-items: center;
+}
+header nav ul a {
+  color: var(--color_gray);
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul a:hover {
+  color: var(--color_accent);
+  transition: all 0.5s ease 0s;
+}
+.site-name {
+  border: 1px solid red;
+  background-image: url(../img/172423-altajskij_tavanskij_nacionalnyj_park-morennoe_ozero-ozero_pejto-agentstvo_parkov_kanady-nacionalnyj_park_glejsher-1920x1080.jpg);
+  background-size: cover;
+}
+.site-name section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2vw;
+  column-gap: 20vh;
+  padding: 1vh 15%;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  border: 1px solid blue;
+}
+.site-name p {
+  color: var(--color_white);
+  opacity: 0.7;
+}
+.site-name h1,
+.site-name h2 {
+  text-transform: uppercase;
+  color: var(--color_white);
+}
+.site-name h3 {
+  text-transform: capitalize;
+}
+.button a {
+  border: 2.5px solid var(--color_white);
+  padding: 10px 30px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 15px;
+  font-family: var(--font1);
+  font-weight: 600;
+}
+.button a:hover {
+  border: 2.5px solid var(--color_accent);
+  color: var(--color_accent);
+}
+.site-name section,
+.title-name {
+  display: grid;
+  row-gap: 2.5vh;
+}
+.site-name hr {
+  width: 80px;
+  color: var(--color_white);
+  height: 2px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.title-name h1 {
+  font-family: var(--font1);
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+}
+.title-name span {
+  font-family: var(--font1);
+  font-weight: 50;
+  color: var(--color_accent);
+}
+.title-name h2 {
+  font-family: var(--font1);
+  font-weight: 300;
+  font-size: 40px;
+}
+.title-name p {
+  font-family: var(--font1);
+  color: rgb(250, 249, 249);
+}
+.icons {
+  padding: 1vh 15%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 2px solid var(--color_gray);
+  height: 90px;
+  align-items: center;
+}
+.item-icons {
+  color: var(--color_gray);
+  font-size: 300%;
+  text-align: right;
+}
+.item-icons i {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7 ease;
+}
+.item-icons i:hover {
+  color: var(--color_accent);
+  transition: all 1s ease;
+}
+.title-icons h2 {
+  font-family: var(--font1);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.title-icons p {
+  font-family: var(--font1);
+  font-size: 14px;
+  color: gray;
+}
